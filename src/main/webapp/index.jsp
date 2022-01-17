@@ -67,6 +67,27 @@ out.println(nomes);
 
 
 
+ <%! Calendar cal = Calendar.getInstance(); %> 
+ 
+ <%! Integer segundos(){
+ 	
+ 	return cal.get(Calendar.SECOND); 
+ }
+ %>
+ 
+ 
+ <h1> <%
+ 	if (segundos()%2 == 0){
+ 		out.println(" Segundo par");
+ 	}else{
+ 		out.println(" Segundo impar");
+ 	}
+ %> </h1>
+
+ 
+<h2> <%=
+	segundos() 	
+ %> </h2>
 
 
 
