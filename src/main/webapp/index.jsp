@@ -1,12 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="java.util.ArrayList" %>
+<%@page import="java.util.Calendar"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
+
 <title>Insert title here</title>
 </head>
 <body>
+
+<!-- exercicio 1 -->
+
+
+
  			Primeira página JSP
  			<%! boolean formatar = true; %>
  			<%!
@@ -24,16 +32,38 @@
  			out.println(new java.util.Date());
  		}%> </h1>
  		
+ 	
+ 	
 
 
 
 
+<!-- exercicio 2 -->
+ 		
+ 		<%
+ArrayList nomes = new ArrayList(); 
+
+nomes.add("washington");
+nomes.add("jefferson");
+nomes.add("caroline");
+nomes.add("alex");
+
+%>
+<%     
+out.println(nomes);
+%>
 
 
+<%! String nome = "gava";
+    String nome1 = "Rapha"; %> 
 
 
+<% nomes.add (nome);
+nomes.add (nome1); %>
 
-
+<%     
+out.println(nomes);
+%>
 
 
 
